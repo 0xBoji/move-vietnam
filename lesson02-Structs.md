@@ -25,3 +25,41 @@ Move hỗ trợ nhiều loại dữ liệu khác nhau:
 5. Vector. Một mảng của u64 sẽ là vector<u64>.
 6. Các kiểu struct tùy chỉnh như UID, signer,... được khai báo với use sui::object::UID trong ví dụ trước.
 # Hy vọng qua bài học này, bạn có thể hiểu rõ hơn về cách tổ chức và sử dụng các module trong lập trình Move trên nền tảng Sui.
+# Quiz
+Trong bài học trước, chúng ta đã định nghĩa cấu trúc AdminCap nhưng nó chưa phải là một kiểu Đối tượng hợp lệ. Hãy:
+## Cập Nhật AdminCap
+Cập nhật `AdminCap` để có khả năng key và một trường `id` kiểu `UID`.
+
+Thêm một hàm riêng tư mới - fun init nhận một đối số ctx kiểu `&mut TxContext` và tạo đối tượng `AdminCap` với `num_frens` được thiết lập là 1000. Một hàm init được tự động gọi khi module được triển khai lên blockchain.
+
+Chia sẻ đối tượng `AdminCap` để bất kỳ ai cũng có thể sử dụng để tạo `SuiFrens`. Chúng tôi sẽ giải thích sau cách thức chỉ các tài khoản cụ thể mới có thể có `AdminCap` và tạo `SuiFrens`.
+## Ví Dụ về Module
+```move
+module 0x123::sui_fren {
+    use sui::object::UID;
+    use sui::tx_context::TxContext;
+
+    struct AdminCap has key {
+        id: UID,
+        num_frens: u64,
+    }
+
+    public fun init(ctx: &mut TxContext) {
+        let admin_cap = AdminCap {
+            id: UID::new(ctx),
+            num_frens: 1000,
+        };
+        // Thêm các code ở đây
+    }
+}
+```
+
+
+## Đáp án:
+```move
+module 0x123::sui_fren {
+    struct AdminCap {
+        num_frens: u64,
+    }
+}
+```
