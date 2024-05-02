@@ -139,5 +139,5 @@ module virtual_airport {
 }
 ```
 
-Ở đây, mỗi "FlightTicket" được cá nhân hóa cho từng hành khách, đảm bảo rằng chỉ có người sở hữu vé mới có thể sử dụng để lên máy bay, giống như thế giới thực!
+> Ở đây, mỗi "FlightTicket" được cá nhân hóa cho từng hành khách, đảm bảo rằng chỉ có người sở hữu vé mới có thể sử dụng để lên máy bay, giống như thế giới thực!
 
