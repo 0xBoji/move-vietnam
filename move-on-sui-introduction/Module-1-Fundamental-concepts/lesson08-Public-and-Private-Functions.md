@@ -12,7 +12,7 @@ public fun equals_1000(x: u64): bool {
 
 Lưu ý rằng hàm này có từ khóa public, có nghĩa là nó có thể được gọi từ bất kỳ module Move nào khác và từ các giao dịch. Ngược lại, các hàm riêng tư chỉ có thể được gọi trong cùng một module và không thể được gọi từ các giao dịch. Khi các giao dịch công khai được gọi, các object hệ thống như TxContext và Clock có thể được truyền một cách tùy chọn. Việc thêm các object này vào danh sách đối số là tùy thuộc vào bạn nếu hàm của bạn cần chúng. Thực hành tốt: Các object hệ thống cần luôn nằm ở cuối danh sách đối số.
 
-# Quiz:
+## Quiz:
 
 Tạo một hàm công khai mới có tên là mint với bốn đối số và trả về một object SuiFren:
 

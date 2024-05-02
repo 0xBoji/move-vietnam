@@ -5,7 +5,7 @@ Trong ví dụ trên, chúng ta định nghĩa một struct đơn giản là MyO
 
 Trên blockchain Sui, các module tạo, đọc, tương tác và chỉnh sửa các object như một phần của quy trình của chúng. Khi người dùng gửi giao dịch để gọi các chức năng khác nhau trên blockchain, các chức năng mà họ gọi có thể cần đọc dữ liệu từ nhiều object mà người dùng sở hữu và chỉnh sửa chúng để phản ánh kết quả của tương tác người dùng. object là một khối xây dựng cơ bản trong Sui Move và là trọng tâm của bất kỳ ứng dụng nào. Khi xây dựng một ứng dụng, điều đầu tiên các nhà phát triển nên suy nghĩ là dữ liệu ứng dụng trông như thế nào và cần tạo ra những object nào để lưu trữ chúng.
 
-# Ví dụ, như một phần của một ứng dụng đặt vé, người dùng có thể gọi vào một module trước tiên cấp cho bạn một vé và cho phép bạn kiểm tra xem vé có hết hạn hay không:
+#### Ví dụ, như một phần của một ứng dụng đặt vé, người dùng có thể gọi vào một module trước tiên cấp cho bạn một vé và cho phép bạn kiểm tra xem vé có hết hạn hay không:
 
 ```move
 module 0x123::ticket_module {
@@ -29,7 +29,7 @@ module 0x123::ticket_module {
 }
 ```
 
-## Các bước là:
+##### Các bước là:
 
 1. Định nghĩa object (chúng ta sử dụng struct để biểu diễn object). Trong trường hợp này, chúng ta định nghĩa object Vé. object này phải có khả năng key và một trường `id` kiểu `object::UID` (xem câu lệnh nhập khẩu ở đầu module).
 2. Gọi `object::new` với đối số mặc định `&mut TxContext` được truyền cho tất cả các chức năng khi được gọi thông qua một giao dịch. `&mut TxContext` là cần thiết để tạo một object mới để gọi `object::new`, trả về id duy nhất của object có thể được gán cho trường id của object (Vé trong trường hợp này).
@@ -61,7 +61,7 @@ module 0x123::sui_fren {
 }
 
 ```
-## Context:
+### Context:
 Trong đoạn code này, chúng ta đã thêm thuộc tính key vào struct AdminCap và thêm trường id kiểu UID, đồng thời định nghĩa một hàm init để tạo và chia sẻ object AdminCap. Hàm init này sẽ được gọi tự động khi module được triển khai, tạo điều kiện cho việc sử dụng AdminCap để tạo ra các Frens.
 
 ## Đáp án:

@@ -43,7 +43,7 @@ Trong đoạn code này, chúng ta đã thay đổi giá trị của num_frens t
 Tìm hiểu thêm về math trên sui: https://github.com/pichtranst123/sui-move-contract/tree/main/forces/sources
 
 ## Đáp án:
-
+```move
 module 0x123::sui_fren {
     use sui::object::{Self, UID};
     use sui::transfer;
@@ -62,3 +62,4 @@ module 0x123::sui_fren {
         transfer::share_object(admin_cap);
     }
 }
+```

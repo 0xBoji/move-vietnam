@@ -35,7 +35,7 @@ module 0x123::my_module {
 ## Quiz
 
 1. Thêm một hàm công khai mới `get_attributes` nhận một object sui_fren và trả về các thuộc tính của nó.
-2. Viết một hàm công khai mới u`pdate_attributes` để cho phép thay đổi danh sách các thuộc tính của một SuiFren. Hàm này nên nhận hai đối số - object sui_fren để sửa đổi và danh sách mới của các thuộc tính.
+2. Viết một hàm công khai mới `update_attributes` để cho phép thay đổi danh sách các thuộc tính của một SuiFren. Hàm này nên nhận hai đối số - object sui_fren để sửa đổi và danh sách mới của các thuộc tính.
 
 ```move
 module 0x123::sui_fren {

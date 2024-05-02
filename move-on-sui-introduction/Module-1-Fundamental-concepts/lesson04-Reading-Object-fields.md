@@ -75,7 +75,7 @@ module 0x123::sui_fren {
 
 Trong đoạn code trên, chúng ta đã thêm hàm `get_num_frens` vào module. Hàm này lấy một tham chiếu bất biến của object AdminCap và trả về số lượng frens từ trường `num_frens` của object đó. Hàm này hữu ích khi bạn muốn biết số lượng frens hiện tại mà một admin có thể tạo.
 
-## Context:
+### Context:
 Ví dụ vui:
 Giả sử bạn đang phát triển một ứng dụng mạng xã hội nơi "frens" là các kết nối bạn bè. Người dùng có thể gửi yêu cầu kết bạn và xem số bạn bè hiện tại. Admin của mạng xã hội này có khả năng tạo kết nối cho người dùng mới. Để quản lý và giới hạn số lượng kết nối mà một admin có thể tạo, chúng ta sử dụng AdminCap. Các nhà phát triển có thể sử dụng hàm `get_num_frens` để theo dõi và kiểm soát việc phân phối các kết nối bạn bè trong ứng dụng.
 
