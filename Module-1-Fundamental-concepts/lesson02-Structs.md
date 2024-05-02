@@ -5,7 +5,7 @@ Dữ liệu trên blockchain Sui có thể được tổ chức thành các stru
 module 0x123::my_module {
    use sui::object::UID;
 
-   // Tất cả các struct làm nền tảng của một đối tượng cần có thuộc tính `key` và một trường id kiểu UID.
+   // Tất cả các struct làm nền tảng của một object cần có thuộc tính `key` và một trường id kiểu UID.
    struct MyObject has key {
        id: UID,
        color: u64,
@@ -26,13 +26,13 @@ Move hỗ trợ nhiều loại dữ liệu khác nhau:
 6. Các kiểu struct tùy chỉnh như UID, signer,... được khai báo với use sui::object::UID trong ví dụ trước.
 # Hy vọng qua bài học này, bạn có thể hiểu rõ hơn về cách tổ chức và sử dụng các module trong lập trình Move trên nền tảng Sui.
 # Quiz
-Trong bài học trước, chúng ta đã định nghĩa cấu trúc AdminCap nhưng nó chưa phải là một kiểu Đối tượng hợp lệ. Hãy:
+Trong bài học trước, chúng ta đã định nghĩa cấu trúc AdminCap nhưng nó chưa phải là một kiểu object hợp lệ. Hãy:
 ## Cập Nhật AdminCap
 Cập nhật `AdminCap` để có khả năng key và một trường `id` kiểu `UID`.
 
-Thêm một hàm riêng tư mới - fun init nhận một đối số ctx kiểu `&mut TxContext` và tạo đối tượng `AdminCap` với `num_frens` được thiết lập là 1000. Một hàm init được tự động gọi khi module được triển khai lên blockchain.
+Thêm một hàm riêng tư mới - fun init nhận một đối số ctx kiểu `&mut TxContext` và tạo object `AdminCap` với `num_frens` được thiết lập là 1000. Một hàm init được tự động gọi khi module được triển khai lên blockchain.
 
-Chia sẻ đối tượng `AdminCap` để bất kỳ ai cũng có thể sử dụng để tạo `SuiFrens`. Chúng tôi sẽ giải thích sau cách thức chỉ các tài khoản cụ thể mới có thể có `AdminCap` và tạo `SuiFrens`.
+Chia sẻ object `AdminCap` để bất kỳ ai cũng có thể sử dụng để tạo `SuiFrens`. Chúng tôi sẽ giải thích sau cách thức chỉ các tài khoản cụ thể mới có thể có `AdminCap` và tạo `SuiFrens`.
 ## Ví Dụ về Module
 ```move
 module 0x123::sui_fren {

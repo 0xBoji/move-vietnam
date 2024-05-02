@@ -11,8 +11,8 @@ module 0x996c4d9480708fb8b92aa7acf819fb0497b5ec8e65ba06601cae2fb6db3312c3::pool_
 
 ```
 
-## Các developer thường triển khai các module cùng nhau như một gói duy nhất, được gán cho một đối tượng và có địa chỉ riêng của nó như 
+## Các developer thường triển khai các module cùng nhau như một gói duy nhất, được gán cho một object và có địa chỉ riêng của nó như 
 `0x996c4d9480708fb8b92aa7acf819fb0497b5ec8e65ba06601cae2fb6db3312c3`
-## Module sau đó có thể được tham chiếu với địa chỉ đối tượng và tên của nó: 
+## Module sau đó có thể được tham chiếu với địa chỉ object và tên của nó: 
 `0x996c4d9480708fb8b92aa7acf819fb0497b5ec8e65ba06601cae2fb6db3312c3::pool_script`
  Trong trường hợp này, tên của module là pool_script. Move cũng cho phép sử dụng bí danh cho địa chỉ bằng cách định nghĩa nó trong Move.toml (ví dụ: cetus=0x996c4d9480708fb8b92aa7acf819fb0497b5ec8e65ba06601cae2fb6db3312c3 và sau đó định nghĩa module như cetus::pool_script). Khi gọi một hàm trên module này, người dùng có thể gửi nội dung giao dịch kích hoạt 0x996c4d9480708fb8b92aa7acf819fb0497b5ec8e65ba06601cae2fb6db3312c3::pool_script::open_position nơi open_position là tên của hàm. Định dạng chuẩn này của module và định danh hàm làm cho việc triển khai, quản lý và tích hợp với các module Move trở nên dễ dàng. Thiết kế module được khuyến khích mạnh mẽ trên Sui và các developer nên giữ mỗi module càng nhỏ càng tốt và trong tệp riêng của nó. Điều này giữ cho cấu trúc dữ liệu và mã sạch sẽ, đồng thời làm cho việc tích hợp với các module và cho người dùng dễ dàng hiểu mỗi giao dịch mà họ gửi. Điều này tương tự như các nguyên tắc phát triển Web 2 như Nguyên tắc Trách nhiệm Đơn lẻ (SRP).
