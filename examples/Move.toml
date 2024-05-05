@@ -1,10 +1,13 @@
 [package]
-name = "calculator"
+name = "example"
 version = "0.0.1"
 
 [dependencies]
-MoveStdlib = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/move-stdlib", rev = "framework/testnet" }
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
 
 [addresses]
+contract = "0x0"
 calculator = "0x1"
+hello = "0xSFSF"
+nft = "0x1FEF"
+marketplace = "0xMKPC"

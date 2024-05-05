@@ -1,4 +1,4 @@
-module hello::HelloSui {
+module hello::hello {
     use sui::storage::{save, borrow_global};
     use sui::framework::Object;
     use sui::event::{EventHandle, emit_event};
