@@ -1,6 +1,6 @@
-# Move Developers Vietnam
+# Move Vietnam
 
-Chào mừng bạn đến với **Move Developers Vietnam**! Đây là một cộng đồng dành cho những người đam mê và làm việc với Move - ngôn ngữ lập trình tiên tiến được phát triển bởi Facebook (nay là Meta) để hỗ trợ blockchain Libra (hiện tại là Diem). 
+Chào mừng bạn đến với **Move Vietnam**! Đây là một cộng đồng dành cho những người đam mê và làm việc với Move - ngôn ngữ lập trình tiên tiến được phát triển bởi Facebook (nay là Meta) để hỗ trợ blockchain Libra (hiện tại là Diem). 
 
 Cộng đồng này tập trung vào việc chia sẻ kiến thức, kinh nghiệm và tài nguyên về Move, bao gồm các nền tảng như Sui, MoveMent, và Aptos,... Chúng tôi hy vọng tạo ra một môi trường hợp tác và phát triển, nơi mọi người có thể học hỏi lẫn nhau và cùng nhau phát triển các dự án sử dụng Move.
 
@@ -37,12 +37,12 @@ Cộng đồng này tập trung vào việc chia sẻ kiến thức, kinh nghi�
 
 Chúng tôi hoan nghênh tất cả các bạn, từ những người mới bắt đầu cho đến những chuyên gia dày dạn kinh nghiệm. Để tham gia cộng đồng, bạn có thể:
 
-- **Theo dõi và tham gia vào GitHub của chúng tôi**: [Move Developers Vietnam](https://github.com/pichtranst123/move-developers-vietnam)
+- **Theo dõi và tham gia vào GitHub của chúng tôi**: [Move  Vietnam](https://github.com/pichtranst123/move--vietnam)
 - **Tham gia các buổi thảo luận trên diễn đàn và nhóm chat**:
 - **Đóng góp bài viết và tài liệu**: Chúng tôi luôn khuyến khích các bạn chia sẻ kiến thức và kinh nghiệm của mình thông qua việc viết bài và tài liệu.
 
-Chúng tôi hy vọng cộng đồng Move Developers Vietnam sẽ là nơi bạn tìm thấy sự hỗ trợ và cảm hứng để khám phá và phát triển với Move. Hãy cùng nhau xây dựng một cộng đồng mạnh mẽ và vững chắc!
+Chúng tôi hy vọng cộng đồng Move  Vietnam sẽ là nơi bạn tìm thấy sự hỗ trợ và cảm hứng để khám phá và phát triển với Move. Hãy cùng nhau xây dựng một cộng đồng mạnh mẽ và vững chắc!
 
 ---
 
-**Move Developers Vietnam**
+**Move  Vietnam**
