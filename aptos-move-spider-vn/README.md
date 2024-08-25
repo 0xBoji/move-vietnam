@@ -1,4 +1,7 @@
 # Docs:
+Mục đích làm repo này để viết lại docs từ movespider thành tiếng việt!
+Bạn có thể lên trang chủ của movespider tìm kiếm thêm về tài liệu aptos:
+https://movespiders.com/courses
 
 Đây là repo giúp bạn học Aptos move và build dự án trên move!
 Các bài viết bắt đầu từ cơ bản trong việc sử dụng aptosframework để build dapp.
